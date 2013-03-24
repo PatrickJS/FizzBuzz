@@ -1,8 +1,8 @@
 def fizzbuzz(array)
-  array.each do |num|
-      array[num-1] = 'Fizz' if num % 3 == 0
-      array[num-1] = 'Buzz' if num % 5 == 0
-      array[num-1] = 'FizzBuzz' if num % 3 == 0 && num % 5 == 0
+  array.each_with_index do |num, index|
+      array[index] = 'Fizz' if num % 3 == 0
+      array[index] = 'Buzz' if num % 5 == 0
+      array[index] = 'FizzBuzz' if num % 3 == 0 && num % 5 == 0
   end
 end
 number = [*1..100]
