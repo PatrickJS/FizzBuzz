@@ -10,8 +10,6 @@ class Fixnum
       self
     end
   end
-  def z?(x)
-    self % x == 0 ? true : false
-  end
+  def z? x; true if self.%(x).zero?; end
 end
-1.upto(100) {|i| p i.fzbz }
+__FILE__ == $0 and 1.upto(100) {|i| puts i.fzbz }
