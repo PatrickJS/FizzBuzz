@@ -9,16 +9,16 @@ def fizzbuzz(array=[*1..100])
 end
 
 describe "FizzBuzz" do
-  it "test method of fzbz" do
-    1.fzbz.should  == 1
-    3.fzbz.should  == "Fizz"
-    5.fzbz.should  == "Buzz"
-    15.fzbz.should == "FizzBuzz"
+  it "test method of f" do
+    1.f.should  == 1
+    3.f.should  == "Fizz"
+    5.f.should  == "Buzz"
+    15.f.should == "FizzBuzz"
   end
 
   it "same result at original" do
     ary = []
-    1.upto(100) {|i| ary << i.fzbz }
+    1.upto(100) {|i| ary << i.f }
     ary.should == fizzbuzz
   end
 end
