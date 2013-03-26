@@ -1,9 +1,1 @@
-def fizzbuzz(array)
-  array.each_with_index do |num, index|
-      array[index] = 'Fizz' if num % 3 == 0
-      array[index] = 'Buzz' if num % 5 == 0
-      array[index] = 'FizzBuzz' if num % 3 == 0 && num % 5 == 0
-  end
-end
-number = [*1..100]
-puts fizzbuzz(number)
+class Fixnum;def f;self.z(15,"FizzBuzz")||self.z(3,"Fizz")||self.z(5,"Buzz")||self;end;def z x,m;m if self.%(x).zero?;end;end;1.upto(100){|i|p i.f}if __FILE__==$0
