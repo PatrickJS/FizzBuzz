@@ -1,10 +1,17 @@
-def fizzbuzz(array)
-  array.map do |num|
-      if num % 3 == 0 && num % 5 == 0; 'FizzBuzz'
-      elsif num % 3 == 0; 'Fizz'
-      elsif num % 5 == 0; 'Buzz'
-      else; num; end
+class Fixnum
+  def fzbz
+    if    self.z? 15
+      'FizzBuzz'
+    elsif self.z? 3
+      'Fizz'
+    elsif self.z? 5
+      'Buzz'
+    else
+      self
+    end
+  end
+  def z?(x)
+    self % x == 0 ? true : false
   end
 end
-number = [*1..100]
-puts fizzbuzz(number)
+1.upto(100) {|i| p i.fzbz }
