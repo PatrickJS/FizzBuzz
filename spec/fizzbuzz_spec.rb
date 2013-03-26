@@ -10,6 +10,8 @@ end
 
 describe "FizzBuzz" do
   it "same result at original" do
-    pp fizzbuzz
+    ary = []
+    1.upto(100) {|i| ary << i.fzbz }
+    ary.should == fizzbuzz
   end
 end
